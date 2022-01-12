@@ -1,8 +1,8 @@
-# Numerical experiments for the paper Optimistic Tree Search Strategies for Black-Box Combinatorial Optimization
+# Code for the paper "Optimistic Tree Search Strategies for Black-Box Combinatorial Optimization"
 
 
 
-## To install
+## Dependencies
 
 Dependencies to install the test problems
 
