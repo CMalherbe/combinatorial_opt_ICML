@@ -11,11 +11,7 @@ Dependencies to install the test problems
 
 ## Run the experiment
 
-First activate the virtualenv
-
-> . venv/bin/activate
-
-Then, you can run all the experiments for a single problem with given dimensionality:
+You can run all the experiments on a single problem with any given dimensionality:
 
 > sh sun_exp.sh test_problem dim evaluation_budget
 
@@ -36,9 +32,8 @@ Otherwise, you can run each individual algorithm using the following command:
 
 ## Test problems
 
-1. MAXSAT: dim 28/43/60
-2. LABS: any dimension
-3. Ising: any dimension Ring/Torus/Triangular
-4. MIS: any dimension
-5. ConcatenatedTrap: any dimension
-6. NKL: any dimension
+1. LABS: any dimension
+2. Ising: any dimension Ring/Torus/Triangular
+3. MIS: any dimension
+4. ConcatenatedTrap: any dimension
+5. NKL: any dimension
