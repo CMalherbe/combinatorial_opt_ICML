@@ -5,7 +5,6 @@ def VEA(dim, evaluation_budget, objective_function, x_init):
     lambda_value = 10
 
     ## Initialization and first evaluation
-    #x_init = list(np.random.choice([0,1], size=dim, replace=True))
     res = []
     res.append(objective_function.evaluate(x_init))
 
