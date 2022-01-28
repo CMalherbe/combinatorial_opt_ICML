@@ -1,4 +1,4 @@
-### Random Search
+### Simulated Annealing
 import numpy as np
 
 def SA(dim, evaluation_budget, objective_function, x_init):
@@ -6,11 +6,9 @@ def SA(dim, evaluation_budget, objective_function, x_init):
     res = []
     T = 1
     annealing_rate = (0.000001)**(1/float(evaluation_budget))
-    T_min = 0.00001#max(0.9**evaluation_budget, 0.00001)
-    #cool = lambda T: (0.000001)**(1/float(evaluation_budget))*T#T: np.exp(Tfactor/budget)*T#(0.000001)**(1/float(budget))*T#0.9 * T#
+    T_min = 0.00001
 
     # Set initial condition and evaluate objective
-    #x_init = list(np.random.choice([0,1], size=dim, replace=True))
     x_current   = x_init.copy()
     old_obj = objective_function.evaluate(x_init)
     best_obj = old_obj
@@ -23,9 +21,8 @@ def SA(dim, evaluation_budget, objective_function, x_init):
     # Run simulated annealing
     for i in range(evaluation_budget-1):
 	    # Decrease T according to cooling schedule
-        T = T * annealing_rate#cool(T)
+        T = T * annealing_rate
         x_new = x_current.copy()
-        #idx_to_flip = np.random.choice(range(dim))
         x_new[idx_to_flip[i]] = int(1 - x_new[idx_to_flip[i]])
 
         # Evaluate objective function
