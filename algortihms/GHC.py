@@ -1,11 +1,10 @@
-### Random Search
+### Greedy Hill-Climber
 import numpy as np
 import pdb
 
 def GHC(dim, evaluation_budget, objective_function, x_init):
 
     ## Initialization and first evaluation
-    #x_init = list(np.random.choice([0,1], size=dim, replace=True))
     res = [objective_function.evaluate(x_init)]
 
     # Save the current point and start the loop
