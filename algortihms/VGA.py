@@ -1,8 +1,8 @@
-### Random Search
+### Genetic Algorithm
 import numpy as np
 
 def VGA(dim, evaluation_budget, objective_function, x_init):
- # To test
+    # Hyper-parameters
     lambda_value = 30
     ite = 0
     all_x = []
