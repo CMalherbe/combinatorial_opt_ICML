@@ -33,7 +33,7 @@ Otherwise, you can run each individual algorithm using the following command:
 ## Test problems
 
 1. LABS: any dimension
-2. Ising: any dimension Ring/Torus/Triangular
+2. Ising: any dimension 
 3. MIS: any dimension
 4. ConcatenatedTrap: any dimension
 5. NKL: any dimension
